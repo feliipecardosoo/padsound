@@ -1,0 +1,44 @@
+.botoes_pai {
+  display: flex;
+  flex-direction: row; /* Direção padrão */
+  gap: 4%;
+}
+
+.teste {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(55, 55, 55, 0.8); /* Fundo semi-transparente */
+  color: white; /* Cor do texto */
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s; /* Transição suave */
+  height: 100px;
+  width: 400px; /* Largura padrão */
+}
+
+.teste:focus {
+  border-color: rgb(23, 123, 77);
+  color: rgb(23, 123, 77);
+}
+
+.teste:hover {
+  transition: 1.4s;
+  color: rgb(23, 123, 77);
+  border-color: rgb(23, 123, 77);
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .botoes_pai {
+    flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+    gap: 10px; /* Ajuste o espaço entre os botões se necessário */
+  }
+
+  .teste {
+    width: 100%; /* Ajusta a largura dos botões para preencher o espaço */
+    height: 80%;
+  }
+}
