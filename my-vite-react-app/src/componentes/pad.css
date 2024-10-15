@@ -30,6 +30,18 @@
   border-color: rgb(23, 123, 77);
 }
 
+@media (max-width: 1850px) {
+  .botoes_pai {
+    flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+    gap: 10px; /* Ajuste o espaço entre os botões se necessário */
+  }
+
+  .teste {
+    width: 100%; /* Ajusta a largura dos botões para preencher o espaço */
+    height: 80%;
+  }
+}
+
 /* Media query para telas menores */
 @media (max-width: 768px) {
   .botoes_pai {
